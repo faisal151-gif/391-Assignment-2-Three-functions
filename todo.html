@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Fortune Generator</a>
+    <a href="stopwatch.html">Stopwatch</a>
+    <a href="todo.html">To-Do List</a>
+  </nav>
+
+  <main>
+    <h1>To-Do List</h1>
+    <p>Tasks are saved after refreshing the page.</p>
+
+    <input type="text" id="task-input" placeholder="Enter a task">
+    <button id="add-button">Add</button>
+
+    <!-- js/todo.js builds one <li> per task-->
+    <ul id="task-list"></ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Faisal Rahman &middot; CSE 391 &middot; BRAC University</p>
+  </footer>
+
+  <script src="js/todo.js"></script>
+</body>
+</html>

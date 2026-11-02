@@ -1,0 +1,107 @@
+/* style.css: one stylesheet shared by all three pages */
+
+/* Page is a column: nav, main, (fortune box), footer.
+   main grows to fill the empty space, which pushes the footer to the bottom. */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ---------- Navigation and footer ---------- */
+nav {
+  background-color: #333333;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+/* ---------- Question 1: Fortune Generator ---------- */
+
+/* Fortune box and colour buttons side by side, centred */
+.fortune-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+/* Starting look of the box (JavaScript changes it when a colour button is clicked) */
+#fortune-box {
+  padding: 15px 20px;
+  border: 3px solid #538135;
+  background-color: #fff2cc;
+  color: #c00000;
+  font-size: 18px;
+}
+
+.color-button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  margin: 2px;
+}
+
+#green-button  { background-color: #6aa84f; }
+#yellow-button { background-color: #ffc000; }
+#blue-button   { background-color: #5b9bd5; }
+#orange-button { background-color: #ed7d31; }
+
+/* ---------- Question 2: Stopwatch ---------- */
+#time-display {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/* ---------- Question 3: To-Do List ---------- */
+#task-input {
+  padding: 8px;
+  width: 250px;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+#task-list li {
+  margin: 10px 0;
+}
+
+#task-list span {
+  margin: 0 10px;
+}
+
+/* A completed task is crossed out */
+.done {
+  text-decoration: line-through;
+  color: gray;
+}

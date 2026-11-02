@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortune Generator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Fortune Generator</a>
+    <a href="stopwatch.html">Stopwatch</a>
+    <a href="todo.html">To-Do List</a>
+  </nav>
+
+  <main>
+    <h1>Fortune Generator</h1>
+    <p>A random fortune is shown below every time the page loads. Click a coloured square to change the box.</p>
+  </main>
+
+  <!--the fortune box with four buttons beside it, just above the footer-->
+  <div class="fortune-row">
+    
+    <div id="fortune-box">Loading your fortune...</div>
+
+    <!-- The four colour buttons, two per row -->
+    <div>
+      <div>
+        <button id="green-button" class="color-button" title="Green"></button>
+        <button id="yellow-button" class="color-button" title="Yellow"></button>
+      </div>
+      <div>
+        <button id="blue-button" class="color-button" title="Blue"></button>
+        <button id="orange-button" class="color-button" title="Orange"></button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Faisal Rahman &middot; CSE 391 &middot; BRAC University</p>
+  </footer>
+
+  <script src="js/fortune.js"></script>
+</body>
+</html>
