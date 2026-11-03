@@ -55,6 +55,19 @@ document.getElementById("orange-button").addEventListener("click", function () {
   changeFortuneStyle("#843c0c", "#fbe5d6", "#c55a11", "17px", "'Courier New', monospace");
 });
 
+const allFortunesList = document.getElementById("all-fortunes");
+
+function showAllFortunes() {
+  allFortunesList.innerHTML = "";
+
+  fortunes.forEach(function (fortune) {
+    const li = document.createElement("li");
+    li.textContent = fortune;
+    allFortunesList.appendChild(li);
+  });
+}
+
+document.getElementById("all-button").addEventListener("click", showAllFortunes);
 
 /*When the page has finished loading, show a random fortune*/
 window.addEventListener("load", showRandomFortune);
