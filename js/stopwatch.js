@@ -1,7 +1,7 @@
 /* Stopwatch*/
 
 let seconds = 0;
-
+let timer = null;
 const display = document.getElementById("time-display");
 
 
