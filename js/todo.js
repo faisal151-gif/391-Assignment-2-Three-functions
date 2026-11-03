@@ -42,6 +42,18 @@ function toggleTask(index) {
   showTasks();
 }
 
+function renameTask(index) {
+  
+  const newText = prompt("Rename task:", tasks[index].text);
+  if (newText === null || newText.trim() === "") {
+    return;
+  }
+
+  tasks[index].text = newText.trim();
+  saveTasks();
+  showTasks();
+}
+
 function deleteTask(index) {
   tasks.splice(index, 1);  // remove 1 item at this position
   saveTasks();
